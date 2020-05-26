@@ -1,0 +1,410 @@
+/* Основной цвет текста #212121 */
+
+/* Вторичный цвет текста #757575 */
+
+/* белый цвет #FFFFFF */
+
+/* вторичный цвет фона #F5F4FA */
+
+/* акцент  #2196F3 */
+
+/* Оформление слова Studio */
+.wite{
+    color: var(--wite-color);
+}
+.back{
+    color: var(--title-text-color);
+    font-family: Raleway
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Button */
+
+.button{
+    color: var(--wite-color);
+    background: var(--accent-color);
+
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 200px;
+    border: 1px solid transparent;
+
+}
+
+.button.primary{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+}
+
+.button.secondary{
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding: 10px 45px;
+}
+
+/* Разметка шапки */
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    width: 1200px;
+}
+
+.main-nav{
+    display: flex;
+    
+}
+
+.page-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+/* Hero */
+
+.hero{ 
+   
+    background-color:rgba(47, 48, 58, 0.8);
+}
+
+.hero-title{
+    width: 646px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--wite-color);
+}
+
+.container-hero{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    width: 1200px;
+}
+
+
+
+/* Section */
+
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.section-title{
+    margin-top: 0px;
+    
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+/* Feauters */
+.section.features{
+    padding-bottom: 0px
+}
+
+.feat{
+    padding-bottom: 94px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.features{
+    display: flex; 
+    align-items: baseline;
+}
+
+.features li{
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+}
+
+.features li:nth-child(4n){
+    margin-right: 0px;
+}
+
+.features > .page{
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.features .title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: var(--titlt-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features .text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+ /* Перечень занятий */
+
+.section .scroll{
+     display: flex;
+ }
+
+ .scroll .works{
+     width: calc((100% - 60px) / 3);
+     margin-right: 30px;
+ }
+
+.works:nth-child(3n){
+     margin-right: 0px;
+ }
+
+.scroll .title{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--wite-color);;
+    background-color: rgba(47, 48, 58, 0.8);
+
+}
+
+/* Команда */
+
+.people{
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.section-team{
+    background-color: var(--fill-silver);
+
+}
+
+.commands{
+    margin-bottom: 94px;
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.commands > .foto{
+    margin-bottom: 30px;
+}
+
+.team{
+    display: flex;
+}
+
+
+.team .commands{
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+}
+
+.commands:nth-child(4n){
+    margin-right: 0px;
+}
+
+.team .title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team .profession{
+    margin-top: 0px;
+    margin-bottom: 16px;
+
+    color: var(--primary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* Клиент */
+
+
+.clients{
+    display: flex;
+}
+
+.clients li{
+    width: calc((100% - 150px) / 6);
+    margin-right: 30px;
+}
+
+.clients li:nth-child(6n){
+    margin-right: 0px;
+}
+
+
+/*scc для portfolio*/
+.section-project{
+    text-align: center;
+}
+
+.project-portfolio .portfolio{
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #F5F4FA;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: hidden;
+}
+
+.project-portfolio .portfolio:hover,
+.project-portfolio .portfolio:focus{
+    color: var(--wite-color);
+    background-color: var(--accent-color);
+}
+
+.project-portfolio{
+    padding-top: 93px;
+    margin-bottom: 50px;
+}
+
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+ .item{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+ }
+
+
+.project .project-img{
+    text-decoration: none;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    width: calc((100% - 60px) / 3);
+}
+
+.card-container{
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+
+.project-img:nth-child(3n){
+    margin-right: 0px;
+}
+
+.project-img:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+
+
+
+.project .title{
+    text-align: initial;
+    margin: 0px;
+    
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project .text{
+    text-align: initial;
+    margin: 0px;
+   
+    color: var(--primary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+}
+
+.project .text-overlay{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.is-hidden{
+    display: none;
+}
+ 
