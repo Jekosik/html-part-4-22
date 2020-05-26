@@ -30,7 +30,8 @@ img{
     color: var(--wite-color);
     background: var(--accent-color);
 
-    display: inline-block;
+    text-decoration: none;
+    display: inline-flex;
     align-items: center;
     text-align: center;
     border-radius: 4px;
@@ -55,6 +56,15 @@ img{
     letter-spacing: 0.06em;
 
     padding: 10px 45px;
+}
+
+.button.secondary::after{
+    display: inline-flex;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/icon\ send.svg);
 }
 
 /* Разметка шапки */
@@ -83,8 +93,16 @@ img{
 /* Hero */
 
 .hero{ 
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+     ), url(../images/Header\ img.jpg);
    
-    background-color:rgba(47, 48, 58, 0.8);
+    background-color:black;
 }
 
 .hero-title{
@@ -157,9 +175,28 @@ img{
     margin-right: 0px;
 }
 
-.features > .page{
-    align-items: center;
+.features li::before{
+    content: '';
+    display: block;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom: 30px;
+}
+
+.features .icon-antena::before{
+    background-image: url(../images/antenna\ 1.svg);
+}
+.features .icon-clock::before{
+    background-image: url(../images/clock\ 1.svg);
+}
+.features .icon-diagram::before{
+    background-image: url(../images/diagram\ 1.svg);
+}
+.features .icon-astronaut::before{
+    background-image: url(../images/astronaut\ 1.svg);
 }
 
 .features .title{
@@ -250,6 +287,11 @@ img{
     margin-right: 0px;
 }
 
+.team .foto{
+    border-radius: 4px 4px 0px 0px;
+    overflow: hidden;
+}
+
 .team .title{
     margin-top: 0px;
     margin-bottom: 10px;
@@ -298,6 +340,20 @@ img{
 .clients li:nth-child(6n){
     margin-right: 0px;
 }
+.clients li::before{
+    display: block;
+    content: '';
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clients-compani1::before{
+    background-image: url(../images/logo\ 1.svg);
+}
+
 
 
 /*scc для portfolio*/

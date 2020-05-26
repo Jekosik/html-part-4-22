@@ -103,6 +103,24 @@ ul{
     text-decoration: none;
 }
 
+.connection-nav .link.post::before{
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    width: 16px;
+    height: 11.2px;
+    background-image: url(../images/envelope.svg);
+}
+
+.connection-nav .link.tel::before{
+    display: inline-block;
+    content: '';
+    margin-right: 10px;
+    width: 10px;
+    height: 14.94px;
+    background-image: url(../images/smartphone.svg);
+}
+
 .connection-nav .link:hover,
 .connection-nav .link:focus{
     color: var(--accent-color);
