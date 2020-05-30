@@ -93,6 +93,8 @@ ul{
 }
 
 .connection-nav .link{
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
    color: var(--primary-text-color);
@@ -104,16 +106,17 @@ ul{
 }
 
 .connection-nav .link.post::before{
-    display: inline-block;
+    display: inline-flex;
     content: '';
     margin-right: 10px;
     width: 16px;
     height: 11.2px;
     background-image: url(../images/envelope.svg);
+    background-position: center;
 }
 
 .connection-nav .link.tel::before{
-    display: inline-block;
+    display: inline-flex;
     content: '';
     margin-right: 10px;
     width: 10px;
@@ -138,6 +141,10 @@ footer{
     justify-content: space-between;
 }
 
+.button-case{
+display: inline-flex;
+justify-content: center;
+}
 
 .logotipe{
     padding-top: 48px;
@@ -199,10 +206,10 @@ footer{
 
 .finishbox{
     padding-top: 56px;
-    margin-left: 114px;
+    margin-left: 94px;
 }
 
 .invitation{
     padding-top: 56px;
-    margin-left: 179px;
+    margin-left: 69px;
 }

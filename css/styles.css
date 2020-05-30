@@ -93,6 +93,8 @@ img{
 /* Hero */
 
 .hero{ 
+    display: flex;
+    align-items: center;
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -140,6 +142,7 @@ img{
 }
 
 .section-title{
+    margin-bottom: 50px;
     margin-top: 0px;
     
     color: var(--title-text-color);
@@ -361,7 +364,17 @@ img{
     text-align: center;
 }
 
-.project-portfolio .portfolio{
+.container.case{
+    padding-top: 93px;
+}
+
+.button-box{
+    display: block;
+}
+
+.portfolio{
+    margin-bottom: 50px;
+    margin-right: 8px;
     padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
@@ -372,15 +385,10 @@ img{
     border: hidden;
 }
 
-.project-portfolio .portfolio:hover,
-.project-portfolio .portfolio:focus{
+.portfolio:hover,
+.portfolio:focus{
     color: var(--wite-color);
     background-color: var(--accent-color);
-}
-
-.project-portfolio{
-    padding-top: 93px;
-    margin-bottom: 50px;
 }
 
 .project{
