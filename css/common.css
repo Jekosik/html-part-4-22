@@ -105,29 +105,24 @@ ul{
     text-decoration: none;
 }
 
-.connection-nav .link.post::before{
-    display: inline-flex;
-    content: '';
-    margin-right: 10px;
-    width: 16px;
-    height: 11.2px;
-    background-image: url(../images/envelope.svg);
-    background-position: center;
-}
 
-.connection-nav .link.tel::before{
-    display: inline-flex;
-    content: '';
+
+
+.icon-contact{
+    fill: var(--primary-text-color);
     margin-right: 10px;
-    width: 10px;
-    height: 14.94px;
-    background-image: url(../images/smartphone.svg);
 }
 
 .connection-nav .link:hover,
 .connection-nav .link:focus{
     color: var(--accent-color);
 }
+
+.connection-nav .link:hover > .icon-contact,
+.connection-nav .link:focus > .icon-contact{
+    fill: var(--accent-color);
+}
+
 
 /* footer */
 
@@ -139,11 +134,6 @@ footer{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-}
-
-.button-case{
-display: inline-flex;
-justify-content: center;
 }
 
 .logotipe{
@@ -196,12 +186,20 @@ justify-content: center;
     text-transform: uppercase;
 }
 
+.icon-send{
+    margin-left: 10px;
+}
+
 .finish-social{
     display: flex;
 }
 
 .finish-social li + li{
     margin-left: 10px;
+}
+
+.commands-case.botton{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .finishbox{

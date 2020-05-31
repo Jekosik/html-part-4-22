@@ -58,14 +58,6 @@ img{
     padding: 10px 45px;
 }
 
-.button.secondary::after{
-    display: inline-flex;
-    content: '';
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    background-image: url(../images/icon\ send.svg);
-}
 
 /* Разметка шапки */
 
@@ -166,7 +158,6 @@ img{
 
 .features{
     display: flex; 
-    align-items: baseline;
 }
 
 .features li{
@@ -178,29 +169,17 @@ img{
     margin-right: 0px;
 }
 
-.features li::before{
-    content: '';
+
+.features-icon{
     display: block;
+    width: 270px;
     height: 120px;
+    padding: 25px 102px;
     background: #F5F4FA;
     border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
     margin-bottom: 30px;
 }
 
-.features .icon-antena::before{
-    background-image: url(../images/antenna\ 1.svg);
-}
-.features .icon-clock::before{
-    background-image: url(../images/clock\ 1.svg);
-}
-.features .icon-diagram::before{
-    background-image: url(../images/diagram\ 1.svg);
-}
-.features .icon-astronaut::before{
-    background-image: url(../images/astronaut\ 1.svg);
-}
 
 .features .title{
     margin-top: 0px;
@@ -267,7 +246,7 @@ img{
 .commands{
     margin-bottom: 94px;
     background: #FFFFFF;
-    border-radius: 4px;
+    /* border-radius: 4px; */
 
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -291,8 +270,7 @@ img{
 }
 
 .team .foto{
-    border-radius: 4px 4px 0px 0px;
-    overflow: hidden;
+    display: block;
 }
 
 .team .title{
@@ -324,7 +302,43 @@ img{
 .social{
     display: flex;
     justify-content: center;
+}
 
+.social .commands-case{
+    width: calc((100% - 30px)) / 4;
+    margin-right: 10px;
+}
+
+.social .commands-case:nth-child(4n){
+    margin-right: 0px;
+}
+
+.commands-case{
+    display: flex;
+    height: 44px; 
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+.commands-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    border-radius: 50%;
+}
+
+.commands-icon{
+    fill: #afb1b8;
+}
+
+.commands-case .commands-link:hover{
+    background-color: var(--accent-color);
+}
+
+.commands-case .commands-link:hover > .commands-icon{
+    fill: var(--wite-color);
+    background-color: var(--accent-color);
 }
 
 
@@ -343,20 +357,26 @@ img{
 .clients li:nth-child(6n){
     margin-right: 0px;
 }
-.clients li::before{
-    display: block;
-    content: '';
-    height: 90px;
+
+.clients-compani{
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    background-repeat: no-repeat;
-    background-position: center;
+    fill: #afb1b8;
+}
+.clients-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    fill: inherit;
 }
 
-.clients-compani1::before{
-    background-image: url(../images/logo\ 1.svg);
-}
 
+
+.clients-compani:hover{
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
 
 
 /*scc для portfolio*/
@@ -368,8 +388,10 @@ img{
     padding-top: 93px;
 }
 
-.button-box{
-    display: block;
+.button-case{
+    display: flex;
+    justify-content: center;
+    list-style: none;
 }
 
 .portfolio{
@@ -382,7 +404,8 @@ img{
     background: #F5F4FA;
     letter-spacing: 0.03em;
     border-radius: 4px;
-    border: hidden;
+    border: transparent;
+    outline: none;
 }
 
 .portfolio:hover,
@@ -418,7 +441,8 @@ img{
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px; 
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 4px 6px rgba(0,0,0,0.16),0px 4px 4px rgba(0,0,0,0.06),0px 1px 1px rgba(0, 0, 0, 0.12); 
 }
 
 .project-img:nth-child(3n){
